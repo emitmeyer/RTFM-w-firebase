@@ -26,9 +26,8 @@ angular.module('rtfmApp')
         $scope.newThreadTitle = ''; //Clear the text in the input box
     }
 
-    $scope.logout = function(){        
-        //Todo: actually log out;
-        $location.path('login');
+    $scope.logout = function(){
+        userService.logout()
     }
 
 });
